@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Kece | Tentang Kami</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gaya tambahan khusus untuk halaman Tentang Kami */
+        .about-section {
+            padding: 80px 5%;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .about-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .about-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+            text-align: justify;
+        }
+        .value-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .value-card {
+            width: 30%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .value-card h3 {
+            color: #4CAF50; /* Warna hijau sebagai penekanan */
+            margin-bottom: 10px;
+        }
+        
+        /* Media query untuk tampilan mobile */
+        @media (max-width: 768px) {
+            .value-grid {
+                flex-direction: column;
+            }
+            .value-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">CASUAL KECE</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="sepatu.html">Sepatu</a></li>
+                <li><a href="jaket.html">Jaket</a></li>
+                <li><a href="celana.html">Celana</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button id="search-btn">Cari 🔍</button>
+            <button id="cart-btn">Keranjang (0) 🛒</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h1>Filosofi Casual Kece Store</h1>
+            <p>
+                **Casual Kece Store** lahir dari keyakinan bahwa gaya kasual tidak harus mengorbankan kualitas dan harga. Di tengah hiruk pikuk tren yang cepat berubah, kami hadir sebagai jawaban bagi Anda yang mencari pakaian dasar, sepatu, dan aksesoris yang tahan lama, nyaman, dan selalu *on-point*. Kami mengkurasi koleksi dari merek-merek ikonik dunia seperti Adidas, Stone Island, Sergio Tacchini, dan Carhartt, yang dikenal memiliki sejarah panjang dalam kualitas dan desain.
+            </p>
+            <p>
+                Misi kami sederhana: **Menyediakan *essentials* gaya kasual yang berkualitas tinggi, *timeless*, dan mudah di-*mix-and-match*, sehingga Anda bisa tampil percaya diri dan *kece* setiap hari tanpa perlu ribet.** Kami fokus pada produk yang fungsional, berkelas, dan memiliki nilai investasi jangka panjang bagi lemari pakaian Anda.
+            </p>
+
+            <h2>Nilai-nilai yang Kami Pegang</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <h3>Kualitas Terjamin</h3>
+                    <p>Kami hanya menjual produk 100% original dari merek-merek terpilih. Setiap item melalui proses kurasi ketat untuk memastikan bahan dan jahitan terbaik.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Gaya yang Abadi (Timeless)</h3>
+                    <p>Kami menghindari *fast fashion*. Fokus kami adalah pada *staple items* yang tidak lekang oleh waktu, agar pakaian Anda relevan selama bertahun-tahun.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Integritas Pelayanan</h3>
+                    <p>Kepuasan pelanggan adalah prioritas. Kami menjamin layanan yang ramah, responsif, dan proses pengiriman yang cepat dan aman.</p>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 50px;">
+                Terima kasih telah menjadi bagian dari perjalanan gaya Casual Kece.
+                <a href="index.html" class="cta-button" style="display: block; margin-top: 20px;">Mulai Belanja Sekarang</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
