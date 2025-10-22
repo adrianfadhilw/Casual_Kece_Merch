@@ -37,7 +37,9 @@ ul {
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-
+#kategori-utama {
+    scroll-margin-top: 100px;
+}
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
@@ -109,7 +111,6 @@ ul {
 
 .product-grid {
     display: grid;
-    /* REVISI UTAMA UNTUK 5 KATEGORI */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
     gap: 25px; 
     padding: 20px 5%;
