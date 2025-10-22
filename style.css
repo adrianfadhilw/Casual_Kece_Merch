@@ -1,184 +1,120 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    font-family: Arial, sans-serif; 
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: #f8f8f8; 
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
+h1, h2, h3 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
 .main-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #eee;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    position: sticky; 
+    position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #000; 
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
 }
 
 .main-nav ul {
-    list-style: none;
     display: flex;
+    gap: 20px;
 }
 
-.main-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 0 15px;
+.main-nav a {
+    font-weight: 500;
+    padding: 5px 0;
     transition: color 0.3s;
 }
 
-.main-nav ul li a:hover {
-    color: #cc0000; 
+.main-nav a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
 }
 
 .user-actions button {
     background: none;
-    border: none;
-    padding: 8px 15px;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
     margin-left: 10px;
-    transition: opacity 0.3s;
+    transition: background-color 0.3s;
 }
 
 .user-actions button:hover {
-    opacity: 0.7;
+    background-color: #eee;
 }
 
 .hero-section {
-    background-color: #f2f2f2;
+    background-color: #333;
+    color: #fff;
+    padding: 80px 5%;
     text-align: center;
-    padding: 100px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .hero-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #000;
+    font-size: 2.5rem;
+    margin-top: 0;
+    color: #fff;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
 .cta-button {
-    background-color: #000;
-    color: white;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
     padding: 12px 25px;
-    border: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: 600;
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #555;
-}
-
-.product-grid {
-    padding: 0 5%;
-    margin-bottom: 40px;
-}
-
-.product-grid h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2em;
+    background-color: #0056b3;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 20px;
+    /* REVISI UTAMA UNTUK 5 KATEGORI */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 25px; 
+    padding: 20px 5%;
+    margin: 40px auto;
+    max-width: 1200px;
 }
 
-.product-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    transition: box-shadow 0.3s;
-}
-
-.product-card:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.product-image {
-    background-color: #eee; 
-    height: 250px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    color: #999;
-}
-
-.price {
-    color: #cc0000; 
-    font-weight: bold;
-    margin: 5px 0 10px 0;
-}
-
-.add-to-cart {
-    background-color: #000;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-.promo-section {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-bottom: 40px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #ccc;
-    font-size: 0.9em;
-}
-
-@media (max-width: 768px) {
-    .main-header {
-        flex-direction: column;
-        padding: 15px 5%;
-    }
-
-    .main-nav {
-        order: 2; 
-        margin-top: 10px;
-    }
-
-    .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .main-nav ul li a {
-        padding: 5px 10px;
-        font-size: 0.9em;
-    }
-}
+.product-grid h2 {
