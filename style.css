@@ -118,17 +118,16 @@ ul {
     max-width: 1200px;
 }
 
-.product-grid h2 {
 .promo-section {
-    background-color: #e6e6fa; /* Lavender */
+    background-color: #e6e6fa; 
     padding: 40px 5%;
-    text-align: center;
+    text-align: center; 
     margin-top: 30px;
     
-    /* Tambahan untuk merapikan: */
-    max-width: 1000px; /* Batasi lebar promo */
-    margin-left: auto; /* Pusatkan ke tengah */
+    max-width: 1000px; 
+    margin-left: auto; 
     margin-right: auto;
+    
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
@@ -141,12 +140,10 @@ ul {
 
 .promo-section p {
     font-size: 1.1rem;
-    font-weight: 600; /* Untuk kode promo agar lebih jelas */
+    font-weight: 600;
     color: #e63946;
 }
-
 footer {
-    /* (Tetap sama, tidak perlu diubah kecuali Anda ingin memastikan) */
     background-color: #222;
     color: #fff;
     text-align: center;
