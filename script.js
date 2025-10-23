@@ -1,31 +1,28 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const cartButton = document.getElementById('cart-btn');
+    let cartCount = 0; // Total item di keranjang
+    
+    const updateCartDisplay = () => {
+        cartButton.textContent = `Keranjang (${cartCount}) 🛒`;
+    };
+
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
-    let cartItemCount = 0; 
-
-    function updateCartDisplay() {
-        cartButton.textContent = `Keranjang (${cartItemCount}) 🛒`;
-    }
-
+    
     addToCartButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const productName = button.getAttribute('data-product');
-
-            cartItemCount++;
-
+        button.addEventListener('click', (event) => {
+            const productName = event.target.dataset.product;
+            
+            cartCount++;
             updateCartDisplay();
-
-            alert(`${productName} telah ditambahkan ke keranjang! Total: ${cartItemCount} item.`);
+            
+            alert(`${productName} telah ditambahkan ke keranjang!`);
         });
     });
 
-    const searchButton = document.getElementById('search-btn');
-    searchButton.addEventListener('click', function() {
-        const searchTerm = prompt("Masukkan kata kunci pencarian (misal: 'kemeja', 'hoodie'):");
-        if (searchTerm) {
-            alert(`Mencari produk dengan kata kunci: "${searchTerm}".`);
-        }
-    });
-
     updateCartDisplay();
+
+    const searchButton = document.getElementById('search-btn');
+    searchButton.addEventListener('click', () => {
+        alert("Fungsi Pencarian (Search) sedang dalam pengembangan.");
+    });
 });
