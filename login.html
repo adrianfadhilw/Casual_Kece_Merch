@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Kece | Masuk</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 25px;
+            color: #333;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-container button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        .login-container p a {
+            color: #007bff;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">CASUAL KECE</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="sepatu.html">Sepatu</a></li>
+                <li><a href="jaket.html">Jaket</a></li>
+                <li><a href="celana.html">Celana</a></li>
+                <li><a href="kaos.html">Kaos</a></li>
+                <li><a href="topi.html">Topi</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button id="search-btn">Cari 🔍</button>
+            <button id="cart-btn">Keranjang (0) 🛒</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Masuk ke Akun Anda</h2>
+            <form action="#">
+                <input type="email" placeholder="Email Anda" required>
+                <input type="password" placeholder="Kata Sandi" required>
+                <button type="submit">MASUK</button>
+            </form>
+            <p style="margin-top: 15px;">Belum punya akun? <a href="#">Daftar di sini</a></p>
+        </div>
+        <div style="height: 200px;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
