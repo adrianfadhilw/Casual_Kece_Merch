@@ -25,7 +25,6 @@ ul {
     list-style: none;
 }
 
-
 .main-header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
@@ -40,9 +39,16 @@ ul {
 }
 
 .logo {
-    font-size: 1.5rem;
     font-weight: 700;
     color: #1a1a1a;
+    display: flex; 
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px; 
+    width: auto; 
+    vertical-align: middle; 
 }
 
 .main-nav ul {
@@ -74,8 +80,6 @@ ul {
 .user-actions button:hover {
     background-color: #eee;
 }
-
-
 
 .hero-section {
     background-color: #333;
@@ -109,8 +113,6 @@ ul {
 .cta-button:hover {
     background-color: #0056b3;
 }
-
-
 
 .product-grid {
     display: grid;
@@ -172,90 +174,4 @@ ul {
 }
 
 .add-to-cart {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.add-to-cart:hover {
-    background-color: #45a049;
-}
-
-
-
-.promo-section {
-    background-color: #e6e6fa; 
-    padding: 40px 5%;
-    text-align: center; 
-    margin-top: 30px;
-    
-    /* FIX PROMO: Memusatkan kotak promo */
-    max-width: 1000px; 
-    margin-left: auto; 
-    margin-right: auto;
-    
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.promo-section h2 {
-    color: #444;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.promo-section p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #e63946;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-}
-
-
-
-@media screen and (max-width: 768px) {
-    
-    .main-header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-        gap: 10px;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-    
-    .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-        gap: 15px;
-    }
-    
-    #kategori-utama {
-        scroll-margin-top: 200px; 
-    }
-    
-    .product-image {
-        height: 180px; 
-    }
-}
+    background-color: #4CAF5
