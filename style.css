@@ -1,30 +1,35 @@
-.main-nav a.active { 
+.main-nav ul li.active-page a { 
     color: #007bff;
     border-bottom: 2px solid #007bff;
 }
 
+/* Tata Letak Konten Halaman (Mengembalikan: max-width, margin: auto, padding) */
 .about-content { 
     padding: 40px 5%; 
     max-width: 900px; 
     margin: auto; 
 }
 
+/* Judul (Mengembalikan: text-align: center) */
 .section-title { 
     text-align: center; 
     margin-bottom: 30px; 
 }
 
+/* Paragraf (Mengembalikan: text-align: justify) */
 .paragraph-justify { 
     text-align: justify; 
     margin-bottom: 20px; 
 }
 
+/* Garis Pemisah (Mengembalikan: margin & width) */
 .section-divider { 
     margin: 50px auto; 
     width: 50%; 
     border-top: 1px solid #ddd; 
 }
 
+/* Flexbox & Tata Letak Kartu Tim (Mengembalikan: display: flex, gap, flex-wrap) */
 .team-container { 
     display: flex;             
     justify-content: space-around; 
@@ -32,6 +37,7 @@
     flex-wrap: wrap;           
 }
 
+/* Styling Kartu Anggota Tim (Mengembalikan: flex, min-width, box-shadow) */
 .team-member-card { 
     flex: 1 1 45%;             
     min-width: 300px;          
@@ -41,12 +47,14 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.05); 
 }
 
+/* Styling Detail Kartu Tim */
 .team-name { 
     text-transform: uppercase; 
     font-size: 1.2em; 
     margin-bottom: 10px; 
 }
 
+/* Warna spesifik untuk nama tim */
 .team-member-card.primary-color .team-name { 
     color: #007bff; 
 }
@@ -58,11 +66,7 @@
     margin-bottom: 10px; 
 }
 
-.role-title {
-    margin-bottom: 5px;
-}
-
-/* Styling Kelas yang diminta */
+/* Styling Kelas yang diminta (student-class) */
 .student-class {
     font-weight: bold; 
     color: #cc0000; 
