@@ -37,13 +37,13 @@
     </header>
 
     <main>
-        <section id="category-header" class="hero-section" style="padding: 50px 5%;">
-            <h1>Koleksi Sepatu Adidas Terbaik</h1>
+        <section id="category-header" class="hero-section" style="padding: 60px 5%; background-color: #1a1a1a; color: white; text-align: center;">
+            <h1 style="font-size: 2.2rem;">Koleksi Sepatu Adidas Terbaik</h1>
             <p>Temukan alas kaki yang nyaman untuk gaya harian Anda.</p>
         </section>
 
         <section id="produk-sepatu" class="product-grid">
-            <h2>5 Jenis Sepatu Adidas Casual</h2>
+            <h2 style="grid-column: 1 / -1; margin-top: 20px;">5 Jenis Sepatu Adidas Casual</h2>
             
             <div class="product-card">
                 <div class="product-image">
@@ -51,7 +51,7 @@
                 </div>
                 <h3>Adidas Superstar</h3>
                 <p class="price">Rp 1.100.000</p>
-                <button class="add-to-cart" data-product="Adidas Superstar">Tambahkan</button>
+                <button class="add-to-cart" data-product="Adidas Superstar" data-price="1100000">Tambahkan</button>
             </div>
             
             <div class="product-card">
@@ -60,7 +60,7 @@
                 </div>
                 <h3>Adidas Samba</h3>
                 <p class="price">Rp 1.500.000</p>
-                <button class="add-to-cart" data-product="Adidas Samba">Tambahkan</button>
+                <button class="add-to-cart" data-product="Adidas Samba" data-price="1500000">Tambahkan</button>
             </div>
 
             <div class="product-card">
@@ -69,7 +69,7 @@
                 </div>
                 <h3>Adidas Gazelle</h3>
                 <p class="price">Rp 1.350.000</p>
-                <button class="add-to-cart" data-product="Adidas Gazelle">Tambahkan</button>
+                <button class="add-to-cart" data-product="Adidas Gazelle" data-price="1350000">Tambahkan</button>
             </div>
             
             <div class="product-card">
@@ -78,7 +78,7 @@
                 </div>
                 <h3>Adidas Forum Low</h3>
                 <p class="price">Rp 990.000</p>
-                <button class="add-to-cart" data-product="Adidas Forum">Tambahkan</button>
+                <button class="add-to-cart" data-product="Adidas Forum Low" data-price="990000">Tambahkan</button>
             </div>
 
             <div class="product-card">
@@ -87,7 +87,7 @@
                 </div>
                 <h3>Adidas NMD R1</h3>
                 <p class="price">Rp 1.699.000</p>
-                <button class="add-to-cart" data-product="Adidas NMD">Tambahkan</button>
+                <button class="add-to-cart" data-product="Adidas NMD R1" data-price="1699000">Tambahkan</button>
             </div>
 
         </section>
@@ -97,6 +97,16 @@
         <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
     </footer>
 
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 style="margin-bottom: 20px;">Keranjang Belanja Anda</h2>
+            <div id="modal-cart-display">
+                </div>
+            <div id="modal-cart-summary" style="margin-top: 20px; text-align: right;">
+                </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
