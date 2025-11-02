@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header class="main-header">
+    <header class="main-header">
         <div class="logo">
             <a href="index.html" style="display: flex; align-items: center;">
                 <img src="images.jpeg" alt="Logo Casual Kece" class="logo-img">
@@ -36,13 +36,13 @@
     </header>
 
     <main>
-        <section id="category-header" class="hero-section" style="padding: 50px 20px;">
-            <h1>Koleksi Kaos Casual Premium</h1>
+        <section id="category-header" class="hero-section" style="padding: 60px 5%; background-color: #1a1a1a; color: white; text-align: center;">
+            <h1 style="font-size: 2.2rem;">Koleksi Kaos Casual Premium</h1>
             <p>Kaos dasar dan grafis untuk kenyamanan dan gaya harian Anda.</p>
         </section>
 
         <section id="produk-kaos" class="product-grid">
-            <h2>5 Jenis Kaos Kasual Pilihan</h2>
+            <h2 style="grid-column: 1 / -1; margin-top: 20px;">5 Jenis Kaos Kasual Pilihan</h2>
             
             <div class="product-card">
                 <div class="product-image">
@@ -50,7 +50,7 @@
                 </div>
                 <h3>Adidas Trefoil T-Shirt</h3>
                 <p class="price">Rp 450.000</p>
-                <button class="add-to-cart" data-product="Adidas Trefoil T-Shirt">Tambahkan</button>
+                <button class="add-to-cart" data-product="Adidas Trefoil T-Shirt" data-price="450000">Tambahkan</button>
             </div>
             
             <div class="product-card">
@@ -59,7 +59,7 @@
                 </div>
                 <h3>Stone Island Badge Tee</h3>
                 <p class="price">Rp 1.500.000</p>
-                <button class="add-to-cart" data-product="Stone Island Badge Tee">Tambahkan</button>
+                <button class="add-to-cart" data-product="Stone Island Badge Tee" data-price="1500000">Tambahkan</button>
             </div>
 
             <div class="product-card">
@@ -68,7 +68,7 @@
                 </div>
                 <h3>Carhartt WIP Pocket T-Shirt</h3>
                 <p class="price">Rp 550.000</p>
-                <button class="add-to-cart" data-product="Carhartt Pocket Tee">Tambahkan</button>
+                <button class="add-to-cart" data-product="Carhartt WIP Pocket T-Shirt" data-price="550000">Tambahkan</button>
             </div>
             
             <div class="product-card">
@@ -77,7 +77,7 @@
                 </div>
                 <h3>Adidas 3-Stripes T-Shirt</h3>
                 <p class="price">Rp 399.000</p>
-                <button class="add-to-cart" data-product="Adidas 3-Stripes Tee">Tambahkan</button>
+                <button class="add-to-cart" data-product="Adidas 3-Stripes T-Shirt" data-price="399000">Tambahkan</button>
             </div>
 
             <div class="product-card">
@@ -86,7 +86,7 @@
                 </div>
                 <h3>Sergio Tacchini Archivo Tee</h3>
                 <p class="price">Rp 650.000</p>
-                <button class="add-to-cart" data-product="Sergio Tacchini Archivo Tee">Tambahkan</button>
+                <button class="add-to-cart" data-product="Sergio Tacchini Archivo Tee" data-price="650000">Tambahkan</button>
             </div>
 
         </section>
@@ -96,6 +96,16 @@
         <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
     </footer>
 
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 style="margin-bottom: 20px;">Keranjang Belanja Anda</h2>
+            <div id="modal-cart-display">
+                </div>
+            <div id="modal-cart-summary" style="margin-top: 20px; text-align: right;">
+                </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
