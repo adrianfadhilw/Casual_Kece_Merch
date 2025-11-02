@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f7f7f7;
-  color: #222;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #111;
   line-height: 1.6;
 }
 
@@ -18,39 +18,39 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 5%;
+  padding: 14px 5%;
   background: #fff;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #e5e5e5;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.logo-link {
+.logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
 .logo-img {
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   margin-right: 8px;
-  border-radius: 6px;
+  border-radius: 4px;
   object-fit: cover;
 }
 
 .logo-text {
   font-weight: 700;
-  font-size: 1.2rem;
-  color: #000;
-  letter-spacing: 0.3px;
+  font-size: 1.3rem;
+  color: #111;
+  letter-spacing: 0.5px;
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 18px;
+  gap: 24px;
   align-items: center;
 }
 
@@ -59,136 +59,140 @@ body {
   color: #111;
   font-weight: 500;
   font-size: 0.95rem;
-  letter-spacing: 0.2px;
-  transition: color 0.3s, border-bottom 0.3s;
-  padding-bottom: 2px;
+  letter-spacing: 0.3px;
+  transition: color 0.3s;
 }
 
-.main-nav a:hover,
-.main-nav a.active {
-  color: #000;
-  border-bottom: 2px solid #000;
+.main-nav a:hover {
+  color: #c00; /* merah khas Uniqlo */
 }
 
 .user-actions button {
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 7px 13px;
-  border-radius: 5px;
+  background: none;
+  color: #111;
+  border: 1px solid #111;
+  padding: 6px 12px;
+  border-radius: 4px;
   cursor: pointer;
   margin-left: 8px;
   font-size: 0.85rem;
   font-weight: 500;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .user-actions button:hover {
-  background: #444;
+  background: #111;
+  color: #fff;
 }
 
 /* ===== HERO ===== */
 .hero-section {
   text-align: center;
-  background: #fff;
+  background-color: #f5f5f5;
+  color: #111;
   padding: 60px 5%;
-  border-radius: 8px;
-  margin: 30px 5%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hero-section h1 {
-  font-size: 1.8rem;
-  color: #111;
+  font-size: 1.9rem;
   font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .hero-section p {
   font-size: 1rem;
   color: #555;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .cta-button {
   display: inline-block;
-  margin-top: 18px;
-  background-color: #000;
+  margin-top: 22px;
+  background-color: #111;
   color: #fff;
-  padding: 9px 20px;
-  border-radius: 6px;
+  padding: 10px 22px;
+  border-radius: 4px;
   text-decoration: none;
   font-weight: 500;
+  letter-spacing: 0.3px;
   transition: background 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #333;
+  background-color: #c00; /* merah khas Uniqlo */
 }
 
 /* ===== PRODUK ===== */
 .product-grid {
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 60px auto;
   padding: 0 5%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 22px;
+  gap: 25px;
 }
 
 .category-card {
   background-color: #fff;
-  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   text-align: center;
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .category-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .product-image img {
   width: 100%;
-  height: 230px;
+  height: 240px;
   object-fit: cover;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .category-card h3 {
-  font-size: 1.05rem;
-  margin: 12px 0;
+  font-size: 1rem;
+  margin: 15px 0;
   color: #111;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* ===== PROMO ===== */
 .promo-section {
   text-align: center;
-  background: #000;
+  background: #111;
   color: #fff;
-  padding: 45px 10%;
-  border-radius: 8px;
-  margin: 50px 5%;
+  padding: 50px 10%;
+  margin: 60px 5%;
+  border-radius: 4px;
 }
 
 .promo-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 8px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
   font-weight: 600;
+}
+
+.promo-section p {
+  color: #ddd;
+  font-size: 1rem;
 }
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: #000;
+  background-color: #111;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
+  padding: 18px 0;
+  margin-top: 60px;
   font-size: 0.9rem;
+  letter-spacing: 0.3px;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -196,29 +200,20 @@ footer {
   .main-header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 5%;
+    padding: 12px 5%;
   }
 
   .main-nav ul {
     flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .user-actions {
+    gap: 14px;
     margin-top: 10px;
   }
 
   .hero-section {
-    padding: 40px 5%;
+    padding: 50px 5%;
   }
 
   .hero-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
-}
-
-img[src=""], 
-img:not([src]), 
-img[src="#"] {
-  display: none;
 }
