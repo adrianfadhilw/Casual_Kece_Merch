@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header class="main-header">
-        <div class="logo">CASUAL KECE</div>
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center;">
+                <img src="images.jpeg" alt="Logo Casual Kece" class="logo-img">
+                <span class="logo-text">CASUAL KECE</span>
+            </a>
+        </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Beranda</a></li>
@@ -17,9 +23,10 @@
                 <li><a href="celana.html">Celana</a></li>
                 <li><a href="kaos.html">Kaos</a></li>
                 <li><a href="topi.html">Topi</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-                <li><a href="syarat.html">Syarat & Ketentuan</a></li>
+                
                 <li><a href="bantuan.html">Pusat Bantuan</a></li>
+                <li><a href="kontak.html">Kontak Kami</a></li>
+                <li><a href="syarat.html">Syarat & Ketentuan</a></li>
                 <li><a href="tentangkami.html">Tentang Kami</a></li>
             </ul>
         </nav>
@@ -28,23 +35,46 @@
             <button id="cart-btn">Keranjang (0) 🛒</button>
         </div>
     </header>
-    
+
     <main>
-        <section id="category-header" class="hero-section" style="padding: 50px 20px; background-color: #eee; color: #333;">
-            <h1>Hubungi Kami</h1>
-            <p>Kami siap membantu Anda dengan pertanyaan atau pesanan.</p>
+        <section class="hero-section" style="padding: 50px 5%; background-color: #1a1a1a; color: white; margin-bottom: 40px;">
+            <h1 style="color: white;">Hubungi Kami</h1>
+            <p>Kami siap membantu pertanyaan dan masukan Anda.</p>
+        </section>
+
+        <section style="padding: 20px 5%; max-width: 800px; margin: auto; text-align: center;">
+            
+            <h2 style="color: #333; font-size: 1.8rem;">Layanan Bantuan Cepat (WhatsApp)</h2>
+            
+            <div style="background-color: #e6fff0; border: 2px solid #25d366; padding: 30px; border-radius: 10px; margin: 30px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);">
+                <p style="font-size: 1.3rem; font-weight: 700; color: #333; margin-bottom: 15px;">Tim Dukungan Kami Siap Melayani Anda:</p>
+                
+                <a href="https://wa.me/6282337532307?text=Halo%20Casual%20Kece,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda." 
+                   target="_blank" 
+                   style="display: inline-block; background-color: #25d366; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; letter-spacing: 0.5px; transition: background-color 0.3s, transform 0.2s;">
+                    🟢 WhatsApp: 0823-3753-2307
+                </a>
+                
+                <p style="margin-top: 20px; font-weight: 500; color: #007bff; font-size: 1rem;">Jam Operasional: Senin - Jumat (09.00 - 17.00 WIB)</p>
+            </div>
+
+
+            <h2 style="margin-top: 40px; color: #333;">Kirim Pesan Melalui Formulir (Respon 1x24 Jam Kerja)</h2>
+            <form style="display: grid; gap: 15px; text-align: left; margin-top: 20px;">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label for="nomor_wa">Nomor WhatsApp (Wajib):</label>
+                <input type="tel" id="nomor_wa" name="nomor_wa" required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;" placeholder="Contoh: 0812xxxxxxxx">
+
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                
+                <button type="submit" class="cta-button" style="background-color: #007bff; border: none; padding: 12px;">Kirim Pesan</button>
+            </form>
+            
         </section>
         
-        <section style="padding: 40px 5%; max-width: 700px; margin: auto; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            <h2 style="text-align: center; margin-bottom: 25px;">Informasi Kontak Cepat</h2>
-            
-            <p style="margin-bottom: 15px;">**Layanan Pelanggan (Customer Service):**</p>
-            <p style="font-size: 1.1em; margin-left: 20px;">📞 WhatsApp: <strong>+62 823-3753-2307</strong></p>
-           
-            <p style="margin-top: 30px; margin-bottom: 15px;">**Jam Operasional:**</p>
-            <p style="margin-left: 20px;">Senin - Jumat: 09.00 - 17.00 WIB</p>
-            <p style="margin-left: 20px;">Sabtu: 09.00 - 14.00 WIB</p>
-        </section>
     </main>
 
     <footer>
