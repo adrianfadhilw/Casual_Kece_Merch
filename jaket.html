@@ -37,13 +37,13 @@
     </header>
 
     <main>
-        <section class="hero-section" style="padding: 50px 5%;">
-            <h1>Koleksi Jaket Casual Terbaik</h1> 
+        <section class="hero-section" style="padding: 60px 5%; background-color: #1a1a1a; color: white; text-align: center;">
+            <h1 style="font-size: 2.2rem;">Koleksi Jaket Casual Terbaik</h1> 
             <p>Jaket Casual yang Kece Abis.</p>
         </section>
 
         <section class="product-grid">
-            <h2>3 Jenis Jaket Kece Abis</h2>
+            <h2 style="grid-column: 1 / -1; margin-top: 20px;">3 Jenis Jaket Kece Abis</h2>
             
             <div class="product-card">
                 <div class="product-image">
@@ -51,7 +51,7 @@
                 </div>
                 <h3>Stone Island Micro Reps Parka</h3>
                 <p class="price">Rp 8.500.000</p>
-                <button class="add-to-cart" data-product="Stone Island Parka">Tambahkan</button>
+                <button class="add-to-cart" data-product="Stone Island Parka" data-price="8500000">Tambahkan</button>
             </div>
             
             <div class="product-card">
@@ -60,7 +60,7 @@
                 </div>
                 <h3>Sergio Tacchini Track Top Orion</h3>
                 <p class="price">Rp 1.200.000</p>
-                <button class="add-to-cart" data-product="Sergio Tacchini Track Top">Tambahkan</button>
+                <button class="add-to-cart" data-product="Sergio Tacchini Track Top Orion" data-price="1200000">Tambahkan</button>
             </div>
 
             <div class="product-card">
@@ -69,7 +69,7 @@
                 </div>
                 <h3>Carhartt WIP Detroit Jacket</h3>
                 <p class="price">Rp 3.500.000</p>
-                <button class="add-to-cart" data-product="Carhartt Detroit">Tambahkan</button>
+                <button class="add-to-cart" data-product="Carhartt WIP Detroit Jacket" data-price="3500000">Tambahkan</button>
             </div>
 
         </section>
@@ -79,6 +79,16 @@
         <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
     </footer>
 
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 style="margin-bottom: 20px;">Keranjang Belanja Anda</h2>
+            <div id="modal-cart-display">
+                </div>
+            <div id="modal-cart-summary" style="margin-top: 20px; text-align: right;">
+                </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
