@@ -1,265 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: #222;
-    margin-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-ul {
-    list-style: none;
-}
-
+/* === HEADER === */
 .main-header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky; 
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.logo {
-    font-weight: 700;
-    color: #1a1a1a;
-    display: flex; 
-    align-items: center;
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .logo-img {
-    height: 40px; 
-    width: auto; 
-    vertical-align: middle; 
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 .logo-text {
-    margin-left: 10px; 
-    font-size: 1.5rem; 
-    color: #1a1a1a; 
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #000;
 }
 
 .main-nav ul {
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 .main-nav a {
-    font-weight: 500;
-    padding: 5px 0;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-.main-nav a:hover {
-    color: #007bff; 
-    border-bottom: 2px solid #007bff;
+.main-nav a:hover,
+.main-nav a.active {
+  color: #0077b6;
+  border-bottom: 2px solid #0077b6;
 }
 
 .user-actions button {
-    background: none;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10px;
-    transition: background-color 0.3s;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.3s;
 }
 
 .user-actions button:hover {
-    background-color: #eee;
+  background: #005f8d;
 }
 
+/* === HERO SECTION === */
 .hero-section {
-    background-color: #333;
-    color: #fff;
-    padding: 80px 5%;
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #e9f2f9, #fff);
+  padding: 60px 5%;
+  border-radius: 8px;
+  margin: 30px 5%;
 }
 
 .hero-section h1 {
-    font-size: 2.5rem;
-    margin-top: 0;
-    color: #fff;
+  font-size: 2rem;
+  color: #111;
 }
 
 .hero-section p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #0056b3;
-}
-
+/* === PRODUK GRID === */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-    gap: 25px; 
-    padding: 20px 5%;
-    margin: 40px auto;
-    max-width: 1200px;
-}
-
-#kategori-utama {
-    scroll-margin-top: 120px; 
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 5%;
 }
 
 .product-grid h2 {
-    grid-column: 1 / -1; 
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  color: #333;
 }
 
-.product-card, .category-card {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-align: center;
-    text-decoration: none; 
-    color: inherit;
-    display: block;
+/* GRID RESPONSIF */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 
-.product-card:hover, .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+/* === PRODUK CARD === */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.product-image {
-    height: 250px; 
-    overflow: hidden;
-    margin-bottom: 10px;
-    border-radius: 4px;
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
 .product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-.product-card h3, .category-card h3 {
-    font-size: 1.1rem;
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 15px 0 5px;
+  color: #222;
 }
 
 .price {
-    color: #e63946;
-    font-weight: 700;
-    margin: 5px 0 15px 0;
+  color: #0077b6;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .add-to-cart {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .add-to-cart:hover {
-    background-color: #45a049;
+  background-color: #0077b6;
 }
 
-.promo-section {
-    background-color: #e6e6fa; 
-    padding: 40px 5%;
-    text-align: center; 
-    margin-top: 30px;
-    
-    max-width: 1000px; 
-    margin-left: auto; 
-    margin-right: auto;
-    
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.promo-section h2 {
-    color: #444;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.promo-section p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #e63946;
-}
-
+/* === FOOTER === */
 footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
 }
 
-@media screen and (max-width: 768px) {
-    
-    .main-header {
-        flex-direction: column;
-        text-align: center;
-    }
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-        /* REVISI FINAL UNTUK MENGURANGI JARAK MENU NAVIGASI */
-        gap: 8px; 
-    }
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-    
-    .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-        gap: 15px;
-    }
-    
-    #kategori-utama {
-        scroll-margin-top: 200px; 
-    }
-    
-    .product-image {
-        height: 180px; 
-    }
+  .user-actions {
+    margin-top: 10px;
+  }
 }
