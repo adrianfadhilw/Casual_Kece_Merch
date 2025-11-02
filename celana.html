@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Kece | Celana</title>
+    <title>Casual Kece | Beranda</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header class="main-header">
+    
+    <header class="main-header">
         <div class="logo">
             <a href="index.html" style="display: flex; align-items: center;">
                 <img src="images.jpeg" alt="Logo Casual Kece" class="logo-img">
@@ -37,48 +37,65 @@
     </header>
 
     <main>
-        <section id="category-header" class="hero-section" style="padding: 50px 20px;">
-            <h1>Koleksi Celana Casual Pilihan</h1>
-            <p>Celana bergaya retro dan sportswear dari merek legendaris.</p>
+        <section class="hero-section" style="padding: 60px 5%; background-color: #1a1a1a; color: white; text-align: center;">
+            <h1>Gaya Casual Kece Dimulai Dari Sini</h1>
+            <p>Koleksi terbaik untuk penampilan harian Anda.</p>
+            <a href="#kategori-utama" class="cta-button" style="margin-top: 20px; display: inline-block;">Lihat Semua Kategori</a>
         </section>
 
-        <section id="produk-celana" class="product-grid">
-            <h2>3 Jenis Celana Pilihan</h2>
-            
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="Sergio Tacchini Damarindo Velour Track Pant- Black Beauty.jpeg" alt="Sergio Tacchini Track Pant" style="width:100%; height:auto;">
-                </div>
-                <h3>Sergio Tacchini Dallas Track Pant</h3>
-                <p class="price">Rp 950.000</p>
-                <button class="add-to-cart" data-product="Sergio Tacchini Dallas">Tambahkan</button>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="Adidas Firebird Track Pant.jpeg" alt="Adidas Firebird Track Pant" style="width:100%; height:auto;">
-                </div>
-                <h3>Adidas Firebird Track Pants</h3>
-                <p class="price">Rp 899.000</p>
-                <button class="add-to-cart" data-product="Adidas Firebird">Tambahkan</button>
-            </div>
+        <section id="kategori-utama" style="padding: 20px 5%;">
+            <h2 style="text-align: center; margin-bottom: 30px;">Kategori Pilihan</h2>
+            <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                
+                <a href="sepatu.html" class="category-card">
+                    <div class="product-image"><img src="Adidas Gazelle.jpg.jpg" alt="Sepatu"></div>
+                    <h3>Sepatu</h3>
+                </a>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="58264593-365c-4af5-87ec-9a0cce75ae77.jpeg" alt="Adidas Adicolor Classics" style="width:100%; height:auto;">
-                </div>
-                <h3>Adidas Adicolor Classics Primeblue</h3>
-                <p class="price">Rp 750.000</p>
-                <button class="add-to-cart" data-product="Adidas Adicolor">Tambahkan</button>
-            </div>
+                <a href="jaket.html" class="category-card">
+                    <div class="product-image"><img src="Stone Island - Micro R.jpg" alt="Jaket"></div>
+                    <h3>Jaket</h3>
+                </a>
+                
+                <a href="celana.html" class="category-card">
+                    <div class="product-image"><img src="Sergio Tacchini Damarindo Velour Track Pant- Black Beauty.jpeg" alt="Celana"></div>
+                    <h3>Celana</h3>
+                </a>
+                
+                <a href="kaos.html" class="category-card">
+                    <div class="product-image"><img src="Adidas t-shirt black.jpeg" alt="Kaos"></div>
+                    <h3>Kaos</h3>
+                </a>
 
+                <a href="topi.html" class="category-card">
+                    <div class="product-image"><img src="Adidas Cotton Twill Baseball Cap - Black_White.jpeg" alt="Topi"></div>
+                    <h3>Topi</h3>
+                </a>
+                
+            </div>
         </section>
+        
+        <section class="promo-section" style="padding: 40px 5%; text-align: center; background-color: #f8d7da; color: #721c24; margin-top: 30px;">
+            <h2>DISKON 30% UNTUK SEMUA JAKET</h2>
+            <p>Gunakan kode: JAKETKECE</p>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
     </footer>
 
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 style="margin-bottom: 20px;">Keranjang Belanja Anda</h2>
+            <div id="modal-cart-display">
+                </div>
+            <div id="modal-cart-summary" style="margin-top: 20px; text-align: right;">
+                </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
