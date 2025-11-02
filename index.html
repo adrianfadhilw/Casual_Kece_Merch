@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Kece Store</title>
+    <title>Casual Kece | Toko Fashion Kasual Terbaik</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <header class="main-header">
-        <div class="logo">CASUAL KECE</div>
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center;">
+                <img src="gambar/images.jfif.jpeg" alt="Logo Casual Kece" class="logo-img">
+                <span class="logo-text">CASUAL KECE</span>
+            </a>
+        </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Beranda</a></li>
@@ -18,9 +23,10 @@
                 <li><a href="celana.html">Celana</a></li>
                 <li><a href="kaos.html">Kaos</a></li>
                 <li><a href="topi.html">Topi</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-                <li><a href="syarat.html">Syarat & Ketentuan</a></li>
+                
                 <li><a href="bantuan.html">Pusat Bantuan</a></li>
+                <li><a href="kontak.html">Kontak Kami</a></li>
+                <li><a href="syarat.html">Syarat & Ketentuan</a></li>
                 <li><a href="tentangkami.html">Tentang Kami</a></li>
             </ul>
         </nav>
@@ -31,55 +37,47 @@
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
-            <h1>Gaya Minimalis, Kualitas Maksimal</h1>
-            <p>Koleksi Terbaru Musim Ini Telah Hadir.</p>
-            <a href="#kategori-utama" class="cta-button">Jelajahi 5 Kategori</a> 
+        <section class="hero-section">
+            <h1>Gaya Kasual Maksimal, Harga Minimal</h1>
+            <p>Temukan koleksi terbaru sepatu, jaket, dan aksesori kece di sini.</p>
+            <a href="#kategori-utama" class="cta-button">Lihat Semua Kategori</a>
         </section>
 
-        <section id="kategori-utama" class="product-grid">
-            <h2>Jelajahi 5 Kategori Utama Kami</h2>
-            
-            <a href="sepatu.html" class="category-card" style="text-decoration: none; color: inherit;">
-                <div class="product-image">
-                    <img src="Adidas Gazelle.jpg.jpg" alt="Kategori Sepatu Adidas" style="width:100%; height:100%; object-fit: cover;">
-                </div>
-                <h3 style="text-align: center; margin-top: 10px;">SEPATU 👟</h3>
-            </a>
-            
-            <a href="jaket.html" class="category-card" style="text-decoration: none; color: inherit;">
-                <div class="product-image">
-                    <img src="Stone Island - Micro R.jpg" alt="Kategori Jaket Stone Island Carhartt" style="width:100%; height:100%; object-fit: cover;">
-                </div>
-                <h3 style="text-align: center; margin-top: 10px;">JAKET 🧥</h3>
-            </a>
+        <section id="kategori-utama">
+            <h2 style="text-align: center; margin-bottom: 30px;">Kategori Pilihan</h2>
+            <div class="product-grid">
+                
+                <a href="sepatu.html" class="category-card">
+                    <div class="product-image"><img src="gambar/sepatu-sneaker.jpg" alt="Sepatu"></div>
+                    <h3>Sepatu</h3>
+                </a>
 
-            <a href="celana.html" class="category-card" style="text-decoration: none; color: inherit;">
-                <div class="product-image">
-                    <img src="Sergio Tacchini Damarindo Velour Track Pant- Black Beauty.jpeg" alt="Kategori Celana Track Pants" style="width:100%; height:100%; object-fit: cover;">
-                </div>
-                <h3 style="text-align: center; margin-top: 10px;">CELANA 👖</h3>
-            </a>
+                <a href="jaket.html" class="category-card">
+                    <div class="product-image"><img src="gambar/jaket-bomber.jpg" alt="Jaket"></div>
+                    <h3>Jaket</h3>
+                </a>
+                
+                <a href="celana.html" class="category-card">
+                    <div class="product-image"><img src="gambar/celana-jeans.jpg" alt="Celana"></div>
+                    <h3>Celana</h3>
+                </a>
+                
+                <a href="kaos.html" class="category-card">
+                    <div class="product-image"><img src="gambar/kaos-polos.jpg" alt="Kaos"></div>
+                    <h3>Kaos</h3>
+                </a>
 
-            <a href="kaos.html" class="category-card" style="text-decoration: none; color: inherit;">
-                <div class="product-image">
-                    <img src="Adidas Originals J Trefoil T-shirt Black_white….jpeg" alt="Kategori Kaos Casual" style="width:100%; height:100%; object-fit: cover;">
-                </div>
-                <h3 style="text-align: center; margin-top: 10px;">KAOS 👕</h3>
-            </a>
-            
-            <a href="topi.html" class="category-card" style="text-decoration: none; color: inherit;">
-                <div class="product-image">
-                    <img src="Logo Bucket Hat.jpeg" alt="Kategori Topi Beanie dan Baseball" style="width:100%; height:100%; object-fit: cover;">
-                </div>
-                <h3 style="text-align: center; margin-top: 10px;">TOPI 🧢</h3>
-            </a>
-            
-            </section>
-
-        <section id="promo" class="promo-section">
-            <h2>Diskon 30% untuk Pembelian Kedua!</h2>
-            <p>Gunakan kode: HEMATMODE</p>
+                <a href="topi.html" class="category-card">
+                    <div class="product-image"><img src="gambar/topi-baseball.jpg" alt="Topi"></div>
+                    <h3>Topi</h3>
+                </a>
+                
+            </div>
+        </section>
+        
+        <section class="promo-section">
+            <h2>DISKON 30% UNTUK SEMUA JAKET</h2>
+            <p>Gunakan kode: JAKETKECE</p>
         </section>
 
     </main>
