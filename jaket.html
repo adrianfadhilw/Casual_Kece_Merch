@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casual Kece | Jaket</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <header class="main-header">
         <div class="logo">
-            <a href="index.html" style="display: flex; align-items: center;">
-                <img src="gambar/images.jfif.jpeg" alt="Logo Casual Kece" class="logo-img">
+            <a href="index.html">
+                <img src="images.jpeg" alt="Logo Casual Kece" class="logo-img">
                 <span class="logo-text">CASUAL KECE</span>
             </a>
         </div>
@@ -19,60 +20,61 @@
             <ul>
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="sepatu.html">Sepatu</a></li>
-                <li><a href="jaket.html">Jaket</a></li>
+                <li><a href="jaket.html" class="active">Jaket</a></li>
                 <li><a href="celana.html">Celana</a></li>
                 <li><a href="kaos.html">Kaos</a></li>
                 <li><a href="topi.html">Topi</a></li>
                 
-                <li><a href="bantuan.html">Pusat Bantuan</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li> 
                 <li><a href="kontak.html">Kontak Kami</a></li>
                 <li><a href="syarat.html">Syarat & Ketentuan</a></li>
-                <li><a href="tentangkami.html">Tentang Kami</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li> 
             </ul>
         </nav>
-        <div class="user-actions">
-            <button id="search-btn">Cari 🔍</button>
-            <button id="cart-btn">Keranjang (0) 🛒</button>
-        </div>
-    </header>
+        </header>
 
     <main>
-        <section class="hero-section" style="padding: 50px 5%;">
-            <h1>Koleksi Jaket Casual Terbaik</h1> 
-            <p>Jaket Casual yang Kece Abis.</p>
+        <section class="hero-section" style="padding: 50px 5%; background-color: #1a1a1a; color: white; margin-bottom: 40px;">
+            <h1 style="color: white;">Koleksi Jaket Terbaik</h1>
+            <p>Temukan jaket casual, bomber, dan denim terbaru untuk gaya sehari-hari Anda.</p>
         </section>
 
-        <section class="product-grid">
-            <h2>3 Jenis Jaket Kece Abis</h2>
+        <section id="kategori-jaket" style="padding: 20px 5%; max-width: 1200px; margin: auto;">
             
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="Stone Island - Micro R.jpg" alt="Stone Island Micro Reps Parka">
-                </div>
-                <h3>Stone Island Micro Reps Parka</h3>
-                <p class="price">Rp 8.500.000</p>
-                <button class="add-to-cart" data-product="Stone Island Parka">Tambahkan</button>
-            </div>
+            <h2 class="judul-kategori" style="font-size: 2.2rem; margin-bottom: 50px; text-align: center;">3 Jenis Jaket Pilihan</h2>
             
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="Sergio Tacchini NEW CATANIA Track Top Black_Gold - L.jpg" alt="Sergio Tacchini Track Top">
-                </div>
-                <h3>Sergio Tacchini Track Top Orion</h3>
-                <p class="price">Rp 1.200.000</p>
-                <button class="add-to-cart" data-product="Sergio Tacchini Track Top">Tambahkan</button>
-            </div>
+            <div class="product-grid" style="justify-content: center;">
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="Vestes workwear Carhartt WIP Detroit Jacket (Winter) Marron Taille S.jpg" alt="Carhartt WIP Detroit Jacket">
-                </div>
-                <h3>Carhartt WIP Detroit Jacket</h3>
-                <p class="price">Rp 3.500.000</p>
-                <button class="add-to-cart" data-product="Carhartt Detroit">Tambahkan</button>
-            </div>
+                <a href="detail-jaket-bomber.html">
+                    <div class="product-card">
+                        <img src="jaket-bomber.jpg" alt="Jaket Bomber Classic">
+                        <h3>Jaket Bomber Classic</h3>
+                    </div>
+                </a>
 
+                <a href="detail-jaket-denim.html">
+                    <div class="product-card">
+                        <img src="jaket-denim-wash.jpg" alt="Jaket Denim Wash">
+                        <h3>Jaket Denim Wash</h3>
+                    </div>
+                </a>
+
+                <a href="detail-jaket-parka.html">
+                    <div class="product-card">
+                        <img src="jaket-parka-hitam.jpg" alt="Jaket Parka Hitam">
+                        <h3>Jaket Parka Hitam</h3>
+                    </div>
+                </a>
+
+            </div>
         </section>
+
+        <section class="promo-section">
+            <h2>DISKON 15%</h2>
+            <p>Untuk pembelian jaket kedua, khusus pengguna aplikasi!</p>
+            <strong>Gunakan Kode: JAKETKECE</strong>
+        </section>
+        
     </main>
 
     <footer>
