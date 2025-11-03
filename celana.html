@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Kece | Beranda</title>
+    <title>Casual Kece | Celana</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <header class="main-header">
         <div class="logo">
-            <a href="index.html" style="display: flex; align-items: center;">
+            <a href="index.html">
                 <img src="images.jpeg" alt="Logo Casual Kece" class="logo-img">
                 <span class="logo-text">CASUAL KECE</span>
             </a>
@@ -20,82 +21,63 @@
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="sepatu.html">Sepatu</a></li>
                 <li><a href="jaket.html">Jaket</a></li>
-                <li><a href="celana.html">Celana</a></li>
+                <li><a href="celana.html" class="active">Celana</a></li>
                 <li><a href="kaos.html">Kaos</a></li>
                 <li><a href="topi.html">Topi</a></li>
                 
-                <li><a href="bantuan.html">Pusat Bantuan</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li> 
                 <li><a href="kontak.html">Kontak Kami</a></li>
                 <li><a href="syarat.html">Syarat & Ketentuan</a></li>
-                <li><a href="tentangkami.html">Tentang Kami</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li> 
             </ul>
         </nav>
-        <div class="user-actions">
-            <button id="search-btn">Cari 🔍</button>
-            <button id="cart-btn">Keranjang (0) 🛒</button>
-        </div>
-    </header>
+        </header>
 
     <main>
-        <section class="hero-section" style="padding: 60px 5%; background-color: #1a1a1a; color: white; text-align: center;">
-            <h1>Gaya Casual Kece Dimulai Dari Sini</h1>
-            <p>Koleksi terbaik untuk penampilan harian Anda.</p>
-            <a href="#kategori-utama" class="cta-button" style="margin-top: 20px; display: inline-block;">Lihat Semua Kategori</a>
+        <section class="hero-section" style="padding: 50px 5%; background-color: #1a1a1a; color: white; margin-bottom: 40px;">
+            <h1 style="color: white;">Koleksi Celana Casual Terbaru</h1>
+            <p>Pilihan chino, denim, dan jogger untuk kenyamanan maksimal.</p>
         </section>
 
-        <section id="kategori-utama" style="padding: 20px 5%;">
-            <h2 style="text-align: center; margin-bottom: 30px;">Kategori Pilihan</h2>
-            <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                
-                <a href="sepatu.html" class="category-card">
-                    <div class="product-image"><img src="Adidas Gazelle.jpg.jpg" alt="Sepatu"></div>
-                    <h3>Sepatu</h3>
+        <section id="produk-celana" style="padding: 20px 5%; max-width: 1200px; margin: auto;">
+            
+            <h2 class="judul-kategori" style="font-size: 2.2rem; margin-bottom: 50px; text-align: center;">3 Jenis Celana Casual Pilihan</h2>
+            
+            <div class="product-grid" style="justify-content: center;">
+
+                <a href="detail-celana-chino.html">
+                    <div class="product-card">
+                        <img src="celana-chino-slim-fit.jpg" alt="Celana Chino Slim Fit">
+                        <h3>Celana Chino Slim Fit</h3>
+                        <p class="price">Rp 350.000</p>
+                    </div>
                 </a>
 
-                <a href="jaket.html" class="category-card">
-                    <div class="product-image"><img src="Stone Island - Micro R.jpg" alt="Jaket"></div>
-                    <h3>Jaket</h3>
-                </a>
-                
-                <a href="celana.html" class="category-card">
-                    <div class="product-image"><img src="Sergio Tacchini Damarindo Velour Track Pant- Black Beauty.jpeg" alt="Celana"></div>
-                    <h3>Celana</h3>
-                </a>
-                
-                <a href="kaos.html" class="category-card">
-                    <div class="product-image"><img src="Adidas t-shirt black.jpeg" alt="Kaos"></div>
-                    <h3>Kaos</h3>
+                <a href="detail-celana-denim.html">
+                    <div class="product-card">
+                        <img src="celana-denim-basic.jpg" alt="Celana Denim Basic">
+                        <h3>Celana Denim Basic</h3>
+                        <p class="price">Rp 499.000</p>
+                    </div>
                 </a>
 
-                <a href="topi.html" class="category-card">
-                    <div class="product-image"><img src="Adidas Cotton Twill Baseball Cap - Black_White.jpeg" alt="Topi"></div>
-                    <h3>Topi</h3>
+                <a href="detail-celana-jogger.html">
+                    <div class="product-card">
+                        <img src="celana-jogger-fleece.jpg" alt="Celana Jogger Fleece">
+                        <h3>Celana Jogger Fleece</h3>
+                        <p class="price">Rp 280.000</p>
+                    </div>
                 </a>
                 
-            </div>
+                </div>
         </section>
         
-        <section class="promo-section" style="padding: 40px 5%; text-align: center; background-color: #f8d7da; color: #721c24; margin-top: 30px;">
-            <h2>DISKON 30% UNTUK SEMUA JAKET</h2>
-            <p>Gunakan kode: JAKETKECE</p>
-        </section>
-
     </main>
 
     <footer>
         <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
     </footer>
 
-    <div id="cartModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2 style="margin-bottom: 20px;">Keranjang Belanja Anda</h2>
-            <div id="modal-cart-display">
-                </div>
-            <div id="modal-cart-summary" style="margin-top: 20px; text-align: right;">
-                </div>
-        </div>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
