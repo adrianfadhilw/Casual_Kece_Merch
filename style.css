@@ -51,7 +51,8 @@ ul {
     height: 45px;
     border-radius: 50%;
     margin-right: 10px;
-    object-fit: cover;
+    /* PERUBAHAN: contain agar logo tidak terpotong di dalam lingkaran */
+    object-fit: contain; 
 }
 
 .main-nav {
@@ -65,7 +66,6 @@ ul {
 }
 
 .main-nav a {
-    /* PERBAIKAN FONT: Dikecilkan sedikit dari 1.0rem menjadi 0.9rem */
     font-size: 0.9rem; 
     font-weight: 500;
     color: #555;
@@ -113,6 +113,10 @@ main {
 }
 
 .hero-section {
+    /* Perhatikan: Gambar background di sini tidak menggunakan object-fit, tapi background-size. 
+       Gambar background sudah diatur untuk cover di CSS inline yang Anda berikan. 
+       Untuk menampilkan seluruh gambar background, Anda harus mengganti 'cover' menjadi 'contain' di kode HTML-nya, 
+       tetapi umumnya untuk hero section, cover adalah yang diinginkan. Kita biarkan hero-section tetap cover/default. */
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('hero-bg-bw.jpg') center/cover no-repeat fixed;
     color: white;
     padding: 140px 40px;
@@ -226,7 +230,8 @@ main {
 .product-card img {
     width: 100%;
     height: 280px;
-    object-fit: cover;
+    /* PERUBAHAN: contain agar gambar produk tidak terpotong */
+    object-fit: contain; 
     display: block;
     filter: grayscale(85%);
     transition: filter 0.4s ease;
@@ -359,7 +364,8 @@ main section[style*="max-width: 1000px;"] {
     border-radius: 8px;
     margin-bottom: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
+    /* PERUBAHAN: contain agar gambar produk utama tidak terpotong */
+    object-fit: contain; 
     filter: grayscale(10%);
 }
 
