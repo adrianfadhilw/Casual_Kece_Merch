@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -10,6 +10,7 @@
 body {
   background-color: #fff;
   color: #111;
+  line-height: 1.5;
 }
 
 /* === HEADER === */
@@ -17,33 +18,33 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e0e0e0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 6%;
+  padding: 8px 5%;
   z-index: 999;
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #111;
   letter-spacing: 0.5px;
+  color: #111;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 28px;
+  gap: 22px;
 }
 
 nav a {
   text-decoration: none;
   color: #111;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 nav a:hover,
@@ -53,18 +54,18 @@ nav a.active {
 
 .user-actions {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .user-actions button {
   background-color: #111;
   color: #fff;
   border: none;
-  padding: 7px 14px;
-  border-radius: 3px;
-  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 0.85rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
 .user-actions button:hover {
@@ -77,33 +78,33 @@ nav a.active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  background-color: #f8f8f8;
+  height: 50vh;
+  background-color: #f6f6f6;
   text-align: center;
   padding: 0 20px;
 }
 
 .hero h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
-  max-width: 540px;
-  margin-bottom: 25px;
+  max-width: 500px;
+  margin-bottom: 20px;
 }
 
 .hero a {
   text-decoration: none;
   background-color: #111;
   color: #fff;
-  padding: 10px 22px;
-  border-radius: 3px;
-  font-size: 0.95rem;
-  transition: 0.3s;
+  padding: 9px 20px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
 }
 
 .hero a:hover {
@@ -112,60 +113,60 @@ nav a.active {
 
 /* === PRODUK GRID === */
 .products {
-  padding: 60px 8%;
+  padding: 50px 7%;
   text-align: center;
 }
 
 .products h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 35px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 28px;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
+  gap: 22px;
 }
 
 .product-card {
   border: 1px solid #e5e5e5;
-  border-radius: 6px;
+  border-radius: 4px;
   overflow: hidden;
-  transition: 0.3s;
   background-color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .product-card img {
   width: 100%;
-  height: 280px;
+  height: 260px;
   object-fit: cover;
 }
 
 .product-card h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 12px 0 6px;
+  margin: 10px 0 5px;
 }
 
 .product-card p {
-  color: #777;
   font-size: 0.9rem;
-  margin-bottom: 14px;
+  color: #666;
+  margin-bottom: 12px;
 }
 
 /* === FOOTER === */
 footer {
   text-align: center;
-  padding: 20px 0;
-  border-top: 1px solid #e5e5e5;
+  padding: 18px 0;
+  border-top: 1px solid #e0e0e0;
   color: #555;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-top: 40px;
 }
 
@@ -175,24 +176,24 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    padding: 14px 5%;
+    padding: 10px 5%;
   }
 
   nav ul {
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 15px;
   }
 
   .hero {
-    height: 55vh;
+    height: 45vh;
     padding: 30px 10px;
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .product-card img {
-    height: 220px;
+    height: 200px;
   }
 }
