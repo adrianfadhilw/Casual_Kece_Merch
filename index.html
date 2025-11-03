@@ -1,89 +1,244 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casual Kece | Toko Fashion Kasual</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <header class="main-header">
-    <div class="logo">
-      <a href="index.html">
-        <img src="images.jpeg" alt="Logo Casual Kece" class="logo-img">
-        <span class="logo-text">CASUAL KECE</span>
-      </a>
-    </div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="sepatu.html">Sepatu</a></li>
-        <li><a href="jaket.html">Jaket</a></li>
-        <li><a href="celana.html">Celana</a></li>
-        <li><a href="kaos.html">Kaos</a></li>
-        <li><a href="topi.html">Topi</a></li>
-        <li><a href="bantuan.html">Pusat Bantuan</a></li>
-        <li><a href="kontak.html">Kontak Kami</a></li>
-        <li><a href="syarat.html">Syarat & Ketentuan</a></li>
-        <li><a href="tentangkami.html">Tentang Kami</a></li>
-      </ul>
-    </nav>
-  </header>
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #F8F8F8;
+}
 
-  <main>
-    <section class="hero-section">
-      <h1>Gaya Kasual Maksimal, Harga Minimal</h1>
-      <p>Temukan koleksi terbaru sepatu, jaket, dan aksesori kece di sini.</p>
-      <a href="#kategori-utama" class="cta-button">Lihat Semua Kategori</a>
-    </section>
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-    <section id="kategori-utama">
-      <h2 class="judul-kategori">Kategori Produk</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <a href="sepatu.html">
-            <img src="Adidas Gazelle.jpg.jpg" alt="Sepatu">
-            <h3>Sepatu</h3>
-          </a>
-        </div>
-        <div class="product-card">
-          <a href="jaket.html">
-            <img src="Stone Island - Micro R.jpg" alt="Jaket">
-            <h3>Jaket</h3>
-          </a>
-        </div>
-        <div class="product-card">
-          <a href="celana.html">
-            <img src="Sergio Tacchini Damarindo Velour Track Pant- Black Beauty.jpeg" alt="Celana">
-            <h3>Celana</h3>
-          </a>
-        </div>
-        <div class="product-card">
-          <a href="kaos.html">
-            <img src="Adidas t-shirt black.jpeg" alt="Kaos">
-            <h3>Kaos</h3>
-          </a>
-        </div>
-        <div class="product-card">
-          <a href="topi.html">
-            <img src="Adidas Cotton Twill Baseball Cap - Black_White.jpeg" alt="Topi">
-            <h3>Topi</h3>
-          </a>
-        </div>
-      </div>
-    </section>
+ul {
+    list-style: none;
+}
 
-    <section class="promo-section">
-      <h2>DISKON 30% UNTUK SEMUA JAKET</h2>
-      <p>Gunakan kode: <strong>JAKETKECE</strong></p>
-    </section>
-  </main>
+.main-header {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-  <footer>
-    <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
-  </footer>
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1C3B7E;
+    transition: color 0.3s ease;
+}
 
-</body>
-</html>
+.logo a:hover {
+    color: #0d285b;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #1C3B7E;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1C3B7E;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+main {
+    padding: 0 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg-bw.jpg') center/cover no-repeat;
+    color: white;
+    padding: 120px 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #1C3B7E;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #1C3B7E;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: #1C3B7E;
+    transform: translateY(-2px);
+    border: 2px solid #1C3B7E;
+}
+
+#kategori-utama {
+    padding: 40px 0;
+}
+
+.judul-kategori {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333333;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.judul-kategori::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #333333;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid #EEEEEE;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(80%);
+    transition: filter 0.3s ease;
+}
+
+.product-card:hover img {
+    filter: grayscale(0%);
+}
+
+.product-card h3 {
+    padding: 18px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.promo-section {
+    background-color: #333333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin: 60px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.promo-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.promo-section p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.promo-section strong {
+    background-color: #FFD700;
+    color: #333333;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+    border-top: 1px solid #EEEEEE;
+    color: #777;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+}
