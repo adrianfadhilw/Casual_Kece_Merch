@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Kece | Kontak Kami</title>
+    <title>Casual Kece | Kontak</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .kontak-card {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .kontak-card h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .kontak-card p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366; 
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-button:hover {
+            background-color: #1DA851;
+        }
+    </style>
 </head>
 <body>
     
@@ -25,55 +59,25 @@
                 <li><a href="kaos.html">Kaos</a></li>
                 <li><a href="topi.html">Topi</a></li>
                 
-                <li><a href="bantuan.html">Bantuan</a></li>
-                <li><a href="kontak.html" class="active">Kontak Kami</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li> 
+                <li class="active"><a href="kontak.html">Kontak Kami</a></li>
                 <li><a href="syarat.html">Syarat & Ketentuan</a></li>
                 <li><a href="tentangkami.html">Tentang Kami</a></li>
             </ul>
         </nav>
-        </header>
+    </header>
 
     <main>
-        <section class="hero-section" style="padding: 50px 5%; background-color: #1a1a1a; color: white; margin-bottom: 40px;">
-            <h1 style="color: white;">Hubungi Kami</h1>
-            <p>Kami berkomitmen memberikan respons tercepat melalui saluran komunikasi utama kami.</p>
+        <section class="kontak-card">
+            <h1>Hubungi Kami via WhatsApp</h1>
+            <p>Untuk pertanyaan, bantuan, atau pemesanan langsung, silakan hubungi kami melalui tombol di bawah ini. Kami siap melayani Anda dengan cepat!</p>
+            
+            <a href="LINK_WHATSAPP_ANDA" target="_blank" class="whatsapp-button">
+                💬 Klik untuk Chat WhatsApp
+            </a>
+            
+            <p style="margin-top: 30px; font-size: 0.9rem; color: #777;">Layanan kami tersedia setiap hari, pukul 09:00 - 18:00 WIB.</p>
         </section>
-
-        <section style="padding: 20px 5%; max-width: 800px; margin: auto; text-align: center;">
-            
-            <h2 style="color: #333; font-size: 1.8rem; margin-bottom: 30px;">Saluran Komunikasi Utama (Paling Cepat)</h2>
-            
-            <div style="background-color: #e6fff0; border: 2px solid #25d366; padding: 40px; border-radius: 10px; margin: 30px 0; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);">
-                <p style="font-size: 1.4rem; font-weight: 700; color: #007bff; margin-bottom: 20px;">Konsultasi & Pertanyaan Cepat Hanya Melalui:</p>
-                
-                <a href="https://wa.me/6282337532307?text=Halo%20Casual%20Kece,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda."
-                   target="_blank" 
-                   style="display: inline-block; background-color: #25d366; color: white; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; transition: background-color 0.3s, transform 0.2s;">
-                    🟢 CHAT WHATSAPP SEKARANG!
-                </a>
-                
-                <p style="margin-top: 25px; font-weight: 600; color: #555; font-size: 1.1rem;">Nomor Layanan Pelanggan: <strong>0823-3753-2307</strong></p>
-                <p style="margin-top: 5px; font-style: italic; color: #007bff;"></p>
-            </div>
-
-
-            <div style="margin-top: 50px; border-top: 1px solid #ddd; padding-top: 30px;">
-                <h3 style="color: #1a1a1a; font-size: 1.5rem; margin-bottom: 15px;">Informasi Penting Lainnya</h3>
-                <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-                    <div style="flex-basis: 45%; margin-bottom: 20px; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                        <p style="font-weight: bold; color: #e63946;">Jam Operasional 🕒</p>
-                        <p>Senin - Jumat: 09.00 - 17.00 WIB</p>
-                        <p>Sabtu, Minggu, dan Hari Libur Nasional: Tutup</p>
-                    </div>
-                    <div style="flex-basis: 45%; margin-bottom: 20px; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                        <p style="font-weight: bold; color: #e63946;">Cek FAQ</p>
-                        <p>Jawaban atas pertanyaan umum (pengiriman, *return*, pembayaran) dapat ditemukan di <a href="bantuan.html" style="color: #007bff; font-weight: bold;">Pusat Bantuan Kami</a>.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        
     </main>
 
     <footer>
