@@ -1,77 +1,198 @@
-/* ===== HEADER NAVIGATION (versi elegan hitam-putih) ===== */
-.main-header {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+}
+
+/* === HEADER === */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 6%;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 12px 6%;
+  z-index: 999;
 }
 
-.logo-text {
-  font-weight: 700;
+.logo {
   font-size: 1.4rem;
+  font-weight: 700;
   color: #111;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
-.main-nav ul {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
-  align-items: center;
+  gap: 28px;
 }
 
-.main-nav a {
+nav a {
   text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: 0.5px;
-  transition: color 0.3s, border-bottom 0.3s;
-  padding-bottom: 4px;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.main-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #c00;
-  border-bottom: 2px solid #c00;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
 }
 
 .user-actions button {
-  background: #111;
+  background-color: #111;
   color: #fff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 8px;
+  padding: 7px 14px;
+  border-radius: 3px;
   font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  transition: background 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .user-actions button:hover {
-  background: #c00;
+  background-color: #c00;
 }
 
-/* responsif */
+/* === HERO === */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 540px;
+  margin-bottom: 25px;
+}
+
+.hero a {
+  text-decoration: none;
+  background-color: #111;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.hero a:hover {
+  background-color: #c00;
+}
+
+/* === PRODUK GRID === */
+.products {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
+
+.product-card p {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .main-header {
+  header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+    padding: 14px 5%;
   }
 
-  .main-nav ul {
+  nav ul {
     flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 8px;
+    gap: 18px;
   }
 
-  .main-nav a {
-    font-size: 0.95rem;
+  .hero {
+    height: 55vh;
+    padding: 30px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .product-card img {
+    height: 220px;
   }
 }
