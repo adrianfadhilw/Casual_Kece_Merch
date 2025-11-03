@@ -3,41 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Kece | Kontak</title>
+    <title>Casual Kece | Kontak Kami</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .kontak-card {
-            max-width: 600px;
+        .kontak-container {
+            max-width: 800px;
             margin: 50px auto;
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .kontak-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .kontak-icon {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-right: 20px;
+            width: 50px;
+            flex-shrink: 0;
             text-align: center;
         }
-        .kontak-card h1 {
-            color: #333;
+        .kontak-detail h3 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+        .kontak-detail p {
+            margin: 0;
+            color: #555;
+            font-size: 1rem;
+        }
+        .wa-link {
+            color: #25D366 !important;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        .wa-link:hover {
+            text-decoration: underline;
+        }
+        .faq-section {
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+            padding-top: 30px;
+        }
+        .faq-item {
             margin-bottom: 20px;
         }
-        .kontak-card p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 30px;
-        }
-        .whatsapp-button {
-            display: inline-block;
-            background-color: #25D366; 
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.2rem;
+        .faq-item h4 {
+            color: #1a1a1a;
             font-weight: 600;
-            transition: background-color 0.3s;
-        }
-        .whatsapp-button:hover {
-            background-color: #1DA851;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -68,16 +89,55 @@
     </header>
 
     <main>
-        <section class="kontak-card">
-            <h1>Hubungi Kami via WhatsApp</h1>
-            <p>Untuk pertanyaan, bantuan, atau pemesanan langsung, silakan hubungi kami melalui tombol di bawah ini. Kami siap melayani Anda dengan cepat!</p>
+        <div class="kontak-container">
+            <h1 style="text-align: center; margin-bottom: 40px;">Hubungi Casual Kece Store</h1>
+            <p style="text-align: center; margin-bottom: 40px; color: #777;">Kami melayani pemesanan cepat dan bantuan produk hanya melalui saluran WhatsApp:</p>
+
+            <div class="kontak-item">
+                <span class="kontak-icon">🟢</span>
+                <div class="kontak-detail">
+                    <h3>Pemesanan & Bantuan Cepat (WhatsApp)</h3>
+                    <p>Layanan <strong>fast response</strong> untuk pemesanan langsung. Klik tautan di bawah ini, dan format order akan terisi otomatis, Anda tinggal mengisi data!</p>
+                    <p>Nomor WA: <strong>0823 - 3753 - 2307</strong></p>
+                    <a href="https://wa.me/6282337532307?text=Halo%20Casual%20Kece.%20Saya%20ingin%20melakukan%20pemesanan.%20Mohon%20diisi%20format%20di%20bawah%20ini:%0A%0A---%20FORMAT%20ORDER%20---%0A%20Nama%20Lengkap:%0A%20Alamat%20Lengkap:%0A%20No.%20HP%20Aktif:%0A%20Daftar%20Pesanan:%20(Nama%20Produk/Ukuran/Jumlah)%0A%20Metode%20Pembayaran:%20(Transfer/COD)%0A%0ATerima%20kasih." target="_blank" class="wa-link">➡️ Klik untuk Kirim Format Order WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="kontak-item" style="border-bottom: none;">
+                <span class="kontak-icon">🕓</span>
+                <div class="kontak-detail">
+                    <h3>Jam Operasional</h3>
+                    <p>Pemesanan & Chat Support:</p>
+                    <p>Senin - Sabtu, 09:00 - 18:00 WIB</p>
+                    <p>Minggu dan Hari Libur Nasional: Tutup (Balasan Lambat)</p>
+                </div>
+            </div>
             
-            <a href="LINK_WHATSAPP_ANDA" target="_blank" class="whatsapp-button">
-                💬 Klik untuk Chat WhatsApp
-            </a>
-            
-            <p style="margin-top: 30px; font-size: 0.9rem; color: #777;">Layanan kami tersedia setiap hari, pukul 09:00 - 18:00 WIB.</p>
-        </section>
+            <div class="faq-section">
+                <h2 style="text-align: center; margin-bottom: 30px;">Pertanyaan Umum (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <h4>Apakah produk yang dijual dijamin Original?</h4>
+                    <p>Ya, kami hanya menjual produk <strong>Original Brand New With Tag</strong> (BNWT) 100%. Kami memberikan jaminan uang kembali 2x lipat jika terbukti tidak asli.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Bagaimana cara melakukan pemesanan?</h4>
+                    <p>Cukup klik tombol <strong>'Klik untuk Kirim Format Order WhatsApp'</strong> di atas. Pesan akan terisi otomatis, dan Anda tinggal mengisi Nama, Alamat, dan daftar pesanan.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Apakah bisa *Cash on Delivery* (COD)?</h4>
+                    <p>Kami menyediakan layanan COD terbatas di area Jakarta dan sekitarnya. Untuk luar kota, kami melayani pengiriman via ekspedisi terpercaya.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Berapa lama waktu pengiriman?</h4>
+                    <p>Pengiriman biasanya memakan waktu 2-5 hari kerja, tergantung lokasi Anda. Resi akan diinfokan maksimal 1x24 jam setelah pembayaran diterima.</p>
+                </div>
+            </div>
+
+        </div>
     </main>
 
     <footer>
