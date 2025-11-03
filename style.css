@@ -55,7 +55,7 @@ ul {
 }
 
 .main-nav ul {
-    gap: 15px;
+    gap: 25px; 
 }
 
 .main-nav a {
@@ -86,30 +86,6 @@ ul {
 
 .main-nav a:hover::after {
     width: 100%;
-}
-
-.user-actions {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-.user-actions button {
-    background-color: transparent;
-    color: #333333;
-    border: 1px solid #BBBBBB;
-    padding: 5px 9px; 
-    border-radius: 4px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 0.8rem;
-}
-
-.user-actions button:hover {
-    background-color: #1C3B7E;
-    color: white;
-    border-color: #1C3B7E;
 }
 
 .main-nav .active {
