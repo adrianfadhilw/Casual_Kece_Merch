@@ -1,80 +1,76 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Kece | Pusat Bantuan</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Kece | Pusat Bantuan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header class="main-header">
-        <div class="logo">
-            <a href="index.html" style="display: flex; align-items: center;">
-                <img src="images.jpeg" alt="Logo Casual Kece" class="logo-img">
-                <span class="logo-text">CASUAL KECE</span>
-            </a>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="sepatu.html">Sepatu</a></li>
-                <li><a href="jaket.html">Jaket</a></li>
-                <li><a href="celana.html">Celana</a></li>
-                <li><a href="kaos.html">Kaos</a></li>
-                <li><a href="topi.html">Topi</a></li>
-                
-                <li><a href="bantuan.html">Pusat Bantuan</a></li>
-                <li><a href="kontak.html">Kontak Kami</a></li>
-                <li><a href="syarat.html">Syarat & Ketentuan</a></li>
-                <li><a href="tentangkami.html">Tentang Kami</a></li>
-            </ul>
-        </nav>
-        <div class="user-actions">
-            <button id="search-btn">Cari 🔍</button>
-            <button id="cart-btn">Keranjang (0) 🛒</button>
-        </div>
-    </header>
 
-    <main>
-        <section class="hero-section" style="padding: 50px 5%; background-color: #1a1a1a; color: white; margin-bottom: 40px;">
-            <h1 style="color: white;">Pusat Bantuan & FAQ</h1>
-            <p>Temukan jawaban cepat untuk pertanyaan umum Anda di sini.</p>
-        </section>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images.jpeg" alt="Logo Casual Kece" class="logo-img">
+                <span class="logo-text">CASUAL KECE</span>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="sepatu.html">Sepatu</a></li>
+                <li><a href="jaket.html">Jaket</a></li>
+                <li><a href="celana.html">Celana</a></li>
+                <li><a href="kaos.html">Kaos</a></li>
+                <li><a href="topi.html">Topi</a></li>
+                <li><a href="bantuan.html" class="active">Pusat Bantuan</a></li> 
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button id="search-btn">🔍 Cari</button>
+            <button id="cart-btn">🛒 Keranjang (0)</button>
+        </div>
+    </header>
 
-       <section style="padding: 20px 5%; max-width: 1000px; margin: auto;">
-            
-    <h2 style="margin-top: 0; color: #1a1a1a; font-size: 1.8rem; border-bottom: 2px solid #ccc; padding-bottom: 5px;">Pertanyaan yang Paling Sering Diajukan (FAQ)</h2>
+    <main>
+        <section class="page-hero">
+            <h1>Pusat Bantuan & FAQ</h1>
+            <p>Temukan jawaban cepat untuk pertanyaan umum Anda di sini.</p>
+        </section>
 
-    <div style="margin-top: 30px;">
-        <div style="background-color: #eaf6ff; padding: 20px; border-left: 4px solid #007bff; border-radius: 5px; margin-bottom: 20px;">
-            <p style="font-weight: bold; color: #007bff; margin-bottom: 5px;">Bagaimana Kami Menjamin Keaslian Produk?</p>
-            <p>Kami bekerja sama langsung dengan distributor resmi dan memastikan semua produk adalah **100% Original**. Kepuasan dan kepercayaan Anda adalah prioritas kami.</p>
-        </div>
+        <section class="faq-section">
+            <h2 class="section-title">Pertanyaan yang Paling Sering Diajukan (FAQ)</h2>
 
-        <div style="background-color: #eaf6ff; padding: 20px; border-left: 4px solid #007bff; border-radius: 5px; margin-bottom: 20px;">
-            <p style="font-weight: bold; color: #007bff; margin-bottom: 5px;">Berapa Lama Waktu yang Dibutuhkan untuk Pengiriman?</p>
-            <p>Estimasi pengiriman standar adalah **3 hingga 7 hari kerja**. Anda akan menerima Nomor Resi dalam 24 jam setelah pembayaran diverifikasi untuk pelacakan.</p>
-        </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <p class="faq-question">Bagaimana Kami Menjamin Keaslian Produk?</p>
+                    <p class="faq-answer">Kami bekerja sama langsung dengan distributor resmi dan memastikan semua produk adalah <strong>100% Original</strong>. Kepuasan dan kepercayaan Anda adalah prioritas kami.</p>
+                </div>
 
-        <div style="background-color: #eaf6ff; padding: 20px; border-left: 4px solid #007bff; border-radius: 5px; margin-bottom: 20px;">
-            <p style="font-weight: bold; color: #007bff; margin-bottom: 5px;">Apakah Saya Bisa Membatalkan Pesanan Saya?</p>
-            <p>Pembatalan hanya dapat diproses jika diajukan dalam **1 jam pertama** setelah konfirmasi pesanan, sebelum barang memasuki tahap pengemasan di gudang.</p>
-        </div>
-        
-        <div style="background-color: #eaf6ff; padding: 20px; border-left: 4px solid #007bff; border-radius: 5px; margin-bottom: 20px;">
-            <p style="font-weight: bold; color: #007bff; margin-bottom: 5px;">Bagaimana Jika Saya Menerima Barang Cacat atau Salah?</p>
-            <p>Segera hubungi tim *Customer Service* kami dalam waktu 3 hari. Kami akan memandu Anda untuk proses pengembalian dan penukaran **tanpa biaya tambahan** dari pihak Anda.</p>
-        </div>
-            
-</section>
-        
-    </main>
+                <div class="faq-item">
+                    <p class="faq-question">Berapa Lama Waktu yang Dibutuhkan untuk Pengiriman?</p>
+                    <p class="faq-answer">Estimasi pengiriman standar adalah <strong>3 hingga 7 hari kerja</strong>. Anda akan menerima Nomor Resi dalam 24 jam setelah pembayaran diverifikasi untuk pelacakan.</p>
+                </div>
 
-    <footer>
-        <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
-    </footer>
+                <div class="faq-item">
+                    <p class="faq-question">Apakah Saya Bisa Membatalkan Pesanan Saya?</p>
+                    <p class="faq-answer">Pembatalan hanya dapat diproses jika diajukan dalam <strong>1 jam pertama</strong> setelah konfirmasi pesanan, sebelum barang memasuki tahap pengemasan di gudang.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">Bagaimana Jika Saya Menerima Barang Cacat atau Salah?</p>
+                    <p class="faq-answer">Segera hubungi tim Customer Service kami dalam waktu 3 hari. Kami akan memandu Anda untuk proses pengembalian dan penukaran <strong>tanpa biaya tambahan</strong> dari pihak Anda.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Casual Kece Store. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
