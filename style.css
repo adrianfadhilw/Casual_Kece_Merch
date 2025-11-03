@@ -61,12 +61,12 @@ ul {
 
 .main-nav ul {
     display: flex; 
-    /* PERBAIKAN: Mengurangi jarak gap dari 25px ke 15px agar 10 menu muat sebaris */
     gap: 15px; 
 }
 
 .main-nav a {
-    font-size: 1.0rem; 
+    /* PERBAIKAN FONT: Dikecilkan sedikit dari 1.0rem menjadi 0.9rem */
+    font-size: 0.9rem; 
     font-weight: 500;
     color: #555;
     padding: 8px 0;
@@ -74,7 +74,7 @@ ul {
     transition: color 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    white-space: nowrap; /* Memastikan teks tidak pecah baris */
+    white-space: nowrap; 
 }
 
 .main-nav a:hover {
